@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercicio1.MainPage" BackgroundColor="DarkGoldenrod">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Distancia entre dois pontos" FontSize="Large"
+                   HorizontalTextAlignment="Center" Margin="20"/>
+
+            <Label Text="Digite o ponto Ax" 
+                   HorizontalTextAlignment="Center" FontSize="Medium"/>
+
+            <Entry x:Name="txPontoAx" Keyboard="Numeric" 
+                   HorizontalOptions="Start" MaxLength="10" 
+                   WidthRequest="100" Placeholder="150,15" Margin="20,20,0,20"/>
+
+            <Label Text="Digite o ponto Ay" 
+                   HorizontalTextAlignment="Center" FontSize="Medium"/>
+
+            <Entry x:Name="txPontoAy" Keyboard="Numeric" 
+                   HorizontalOptions="Start" MaxLength="10" 
+                   WidthRequest="100" Placeholder="20" Margin="20,20,0,20"/>
+
+            <Label Text="Digite o ponto Bx" 
+                   HorizontalTextAlignment="Center" FontSize="Medium"/>
+
+            <Entry x:Name="txPontoBx" Keyboard="Numeric" 
+                   HorizontalOptions="Start" MaxLength="10" 
+                   WidthRequest="100" Placeholder="150,15" Margin="20,20,0,20"/>
+
+            <Label Text="Digite o ponto By" 
+                   HorizontalTextAlignment="Center" FontSize="Medium"/>
+
+            <Entry x:Name="txPontoBy" Keyboard="Numeric" 
+                   HorizontalOptions="Start" MaxLength="10" 
+                   WidthRequest="100" Placeholder="20" Margin="20,20,0,20"/>
+
+            <Button x:Name="btCalcular" Text="Calular Distancia" BackgroundColor="Black" 
+                    HorizontalOptions="Center" Margin="10,10,10,10" 
+                    WidthRequest="200" Clicked="btCalcular_Clicked" />
+
+            <Label Text="Distancia Final:" FontSize="Large" TextColor="AliceBlue" 
+                   FontAttributes="Bold,Italic" HorizontalOptions="Center" Margin="20"/>
+
+            <Entry x:Name="txNovoValor" IsEnabled="False" HorizontalOptions="Center" 
+                   Text="" FontSize="Large" BackgroundColor="AliceBlue" 
+                   TextColor="Black" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
